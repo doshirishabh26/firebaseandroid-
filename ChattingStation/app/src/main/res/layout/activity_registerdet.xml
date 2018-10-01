@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".Registerdet">
+    <include
+        layout="@layout/app_layout"
+        android:id="@+id/register_bar">
+
+    </include>
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="238dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint=" Name"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="101dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint=" Password"
+        android:inputType="textMultiLine|textPassword" />
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="168dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint=" Email"
+        android:inputType="textMultiLine|textEmailAddress" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_red_light"
+        android:textStyle="bold"
+        android:text="CREATE NEW ACCOUNT" />
+</RelativeLayout>
